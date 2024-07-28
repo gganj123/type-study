@@ -30,3 +30,4 @@ export type Menu = {
   price: number;
   category: string;
 };
+
