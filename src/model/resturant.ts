@@ -31,3 +31,5 @@ export type Menu = {
   category: string;
 };
 
+export type AddressWithoutZip = Omit<Address, "zipCode">;
+export type RestaurantOnlyCategory = Pick<Restaurant, "category">;
