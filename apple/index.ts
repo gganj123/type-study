@@ -1,26 +1,29 @@
-type Name = string | number;
+let 이름: string = "kim";
+let 나이: number = 50;
+let 결혼했니: boolean = true;
 
-let 이름: Name = "kim";
+//let 회원들: string[] = ["kim", "park"];
 
-function 함수(x: number): number {
-  return x * 2;
-}
-
-함수(123);
-
-type Member = [number, boolean];
-let john: Member = [13, true]; //array에 쓸 수 있는 tuple타입
-
-type Members = {
-  [key: string]: string;
-  // key로 타입지정을 하게 되면 모든 object속성이 그 타입
+let 회원들: { member1: string; member2: string } = {
+  member1: "kim",
+  member2: "park",
 };
 
-let johns: Members = { name: "kim" };
+let myName: string = "kim do hyun";
+let myAge: number = 29;
+let myFrom: string = "Seoul";
 
-class User {
-  name: string;
-  constructor(name: string) {
-    this.name = name;
-  }
-}
+let myFavorit: { Title: string; Singer: string } = {
+  Title: "눈물이뚝뚝",
+  Singer: "K-will",
+};
+
+let project: {
+  member: string[];
+  days: number;
+  started: boolean;
+} = {
+  member: ["kim", "park"],
+  days: 30,
+  started: true,
+};
