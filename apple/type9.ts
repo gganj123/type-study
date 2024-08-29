@@ -13,10 +13,11 @@ if (제목?.innerHTML != undefined) {
 
 let 링크 = document.querySelectorAll(".naver");
 
-링크.forEach((a)=>{
-if (a instanceof HTMLAnchorElement) {
-  a.href = "http://kakao.com";
-})
+링크.forEach((a) => {
+  if (a instanceof HTMLAnchorElement) {
+    a.href = "http://kakao.com";
+  }
+});
 //이것은 Element로 단순히 한다고 해서 지정이 안된다 a태그에 정확한
 //명칭인 HTMLAnchorElement로 지정해줘야 인식된다.
 let 이미지 = document.querySelector("#image");
