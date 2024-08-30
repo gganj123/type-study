@@ -59,3 +59,8 @@ let cart: Basket[] = [
   { product: "청소기", price: 7000 },
   { product: "삼다수", price: 800 },
 ];
+
+//과제3
+interface NewProduct extends Product {
+  card: boolean;
+}
