@@ -64,3 +64,19 @@ let cart: Basket[] = [
 interface NewProduct extends Product {
   card: boolean;
 }
+
+//과제4
+interface nums {
+  plus: (num1: number, num2: number) => number;
+  minus: (num1: number, num2: number) => number;
+}
+
+let oper: nums = {
+  plus(num1, num2) {
+    return num1 + num2;
+  },
+
+  minus(num1, num2) {
+    return num1 - num2;
+  },
+};
