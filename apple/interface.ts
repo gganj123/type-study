@@ -48,3 +48,14 @@ let prod: Product = {
   serialNumber: 1360,
   model: ["TV", "phone"],
 };
+
+//과제2
+interface Basket {
+  product: string;
+  price: number;
+}
+
+let cart: Basket[] = [
+  { product: "청소기", price: 7000 },
+  { product: "삼다수", price: 800 },
+];
