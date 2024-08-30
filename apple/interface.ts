@@ -34,3 +34,17 @@ interface Teacher extends Student {
 
 let stu: Student = { name: "kim", score: 40 };
 let tea: Teacher = { name: "kim", age: 20, score: 40 };
+
+//과제1
+
+interface Product {
+  brand: string;
+  serialNumber: number;
+  model: string[];
+}
+
+let prod: Product = {
+  brand: "Samsung",
+  serialNumber: 1360,
+  model: ["TV", "phone"],
+};
