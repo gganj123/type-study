@@ -34,3 +34,10 @@ function func2({ student, age }) {
 
 func2({ student: true, age: 20 });
 
+//숙제1
+
+let { user, comment, admin } = {
+  user: "kim",
+  comment: [3, 5, 4],
+  admin: false,
+};
