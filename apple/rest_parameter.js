@@ -38,8 +38,14 @@ function func2(_a) {
 }
 func2({ student: true, age: 20 });
 //숙제1
-var _c = {
-    user: "kim",
-    comment: [3, 5, 4],
-    admin: false,
-}, user = _c.user, comment = _c.comment, admin = _c.admin;
+var UserType = {
+    user: string,
+    comment: number[],
+    admin: boolean,
+};
+function func3(_a) {
+    var user = _a.user, comment = _a.comment, admin = _a.admin;
+    console.log(user, comment, admin);
+}
+func3({ user: 'kim', comment: [3, 5, 4], admin: false });
+var WineType;

@@ -36,8 +36,16 @@ func2({ student: true, age: 20 });
 
 //숙제1
 
-let { user, comment, admin } = {
-  user: "kim",
-  comment: [3, 5, 4],
-  admin: false,
+let UserType = {
+  user: string,
+  comment: number[],
+  admin: boolean,
 };
+
+function func3({user,comment,admin}:UserType):void{
+  console.log(user,comment,admin)
+}
+
+func3({user:'kim',comment:[3,5,4],admin:false})
+
+let WineType : (number,string,boolean)[] 
