@@ -37,3 +37,9 @@ function func2(_a) {
     console.log(student, age);
 }
 func2({ student: true, age: 20 });
+//숙제1
+var _c = {
+    user: "kim",
+    comment: [3, 5, 4],
+    admin: false,
+}, user = _c.user, comment = _c.comment, admin = _c.admin;
