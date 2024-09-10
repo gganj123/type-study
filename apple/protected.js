@@ -66,6 +66,7 @@ console.log(cal2);
 //   public static y = 20;
 //   protected z = 30;
 // }
+//숙제2
 var User5 = /** @class */ (function () {
     function User5() {
     }
@@ -82,3 +83,11 @@ var User5 = /** @class */ (function () {
 User5.addOne(3);
 User5.addOne(4);
 User5.printX();
+//숙제3
+var Square = /** @class */ (function () {
+    function Square() {
+    }
+    return Square;
+}());
+var 네모 = new Square(30, 30, "red");
+네모.draw();

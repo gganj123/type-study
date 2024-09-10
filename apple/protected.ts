@@ -46,6 +46,7 @@ console.log(cal2);
 //   protected z = 30;
 // }
 
+//숙제2
 class User5 {
   private static x = 10;
   public static y = 20;
@@ -61,3 +62,8 @@ class User5 {
 User5.addOne(3);
 User5.addOne(4);
 User5.printX();
+
+//숙제3
+class Square {}
+let 네모 = new Square(30, 30, "red");
+네모.draw();
