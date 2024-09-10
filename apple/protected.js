@@ -46,3 +46,15 @@ var User3 = /** @class */ (function () {
 var children = new User3();
 console.log(children);
 //static된 데이터는 안나옴 (못씀)
+var User4 = /** @class */ (function () {
+    function User4() {
+        this.intro = User4.skill + " 전문가입니다.";
+        //static으로 가져왔으면 this로 가져올 수 없음 className으로 가져와야함
+    }
+    User4.skill = "js";
+    return User4;
+}());
+var cal = new User4();
+console.log(cal);
+var cal2 = new User4();
+console.log(cal2);

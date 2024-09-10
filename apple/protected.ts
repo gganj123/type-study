@@ -15,7 +15,7 @@ class NewUser extends User2 {
 
 //static
 class User3 {
-  static x = 10; 
+  static x = 10;
   //static을 쓰면 자식들 못쓰게 부모만 써야 될떄 쓰인다.
   y = 20;
 }
@@ -24,3 +24,14 @@ let children = new User3();
 console.log(children);
 //static된 데이터는 안나옴 (못씀)
 
+class User4 {
+  static skill = "js";
+  intro = User4.skill + " 전문가입니다.";
+  //static으로 가져왔으면 this로 가져올 수 없음 className으로 가져와야함
+}
+
+let cal = new User4();
+console.log(cal);
+
+let cal2 = new User4();
+console.log(cal2);
