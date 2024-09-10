@@ -33,5 +33,31 @@ class User4 {
 let cal = new User4();
 console.log(cal);
 
+//static이기 떄문에 User4클래스로만 들어가면 변경은 할 수 있다 (유용)
+User4.skill = "ts"; // 여기서부터 뽑는 자식들은 전부 ts
+
 let cal2 = new User4();
 console.log(cal2);
+
+//다음 x,y,z속성의 특징을 설명해보기
+// class User {
+//   private static x = 10;
+//   public static y = 20;
+//   protected z = 30;
+// }
+
+class User5 {
+  private static x = 10;
+  public static y = 20;
+  static addOne(a: number) {
+    console.log((User5.x += a));
+  }
+
+  static printX() {
+    console.log(User5.x);
+  }
+}
+
+User5.addOne(3);
+User5.addOne(4);
+User5.printX();
