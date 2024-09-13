@@ -86,4 +86,3 @@ let 네모 = new Square(30, 30, "red");
 네모.draw();
 네모.draw();
 네모.draw();
-네모.draw();
