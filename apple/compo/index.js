@@ -15,3 +15,5 @@ var voidF = function (a) {
     console.log(a);
 };
 voidF({ 구리구리: "부리부리" });
+var dog1 = "bark";
+var dog2 = { name: "paw" };

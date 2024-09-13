@@ -4,6 +4,8 @@ export var 나이 = 20;
 //이것도 당연가능
 export interface 인터페이스 {}
 
+export type Name = string | number;
+
 namespace 네임스페이스 {
   export type Name = string | number;
 }

@@ -1,3 +1,4 @@
+import exp = require("constants");
 import { 이름, 나이 } from "./a";
 //옛날 import없을떄 문법
 import { Caz, Bike } from "./a";
@@ -21,3 +22,17 @@ let voidF: voidFun = function (a) {
 };
 
 voidF({ 구리구리: "부리부리" });
+
+//namespace 개념 알아두면 좋으니 기억하자
+namespace GoodDog {
+  export type Dog = string;
+}
+
+namespace BadDog {
+  export interface Dog {
+    name: string;
+  }
+}
+
+let dog1: GoodDog.Dog = "bark";
+let dog2: BadDog.Dog = { name: "paw" };
