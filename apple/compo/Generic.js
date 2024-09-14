@@ -29,3 +29,11 @@ function jsonObject(x) {
 }
 var result = jsonObject(data);
 console.log(result);
+var Personal = /** @class */ (function () {
+    function Personal(a) {
+        this.name = a;
+    }
+    return Personal;
+}());
+var ap = new Personal("김도현");
+ap.name;

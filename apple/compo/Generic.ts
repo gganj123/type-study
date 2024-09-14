@@ -48,3 +48,12 @@ function jsonObject<Type>(x: string): Type {
 
 let result = jsonObject<Animal2>(data);
 console.log(result);
+
+class Personal<T> {
+  name;
+  constructor(a: T) {
+    this.name = a;
+  }
+}
+let ap = new Personal<string>("김도현");
+ap.name;

@@ -23,17 +23,17 @@ if (Day instanceof Date) {
 
 //논리적으로 이타입인지 특정지을 수 있으면 네로윙으로 인정해줌
 type Car2 = {
-  wheel: "4개";
+  wheels: "4개";
   color: string;
 };
 
 type Bike = {
-  wheel: "2개";
+  wheels: "2개";
   color: string;
 };
 
 function funcWheel(x: Car | Bike) {
-  if (x.wheel == "4개") {
+  if (x.wheels == "4개") {
     //x가 Car2타입인지 확인하는 네로윙
     console.log("x는 Car타입이에요");
   }

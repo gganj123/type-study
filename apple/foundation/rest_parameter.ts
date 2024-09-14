@@ -1,9 +1,9 @@
-function func(...a: (string | number | boolean)[]) {
+function func1(...a: (string | number | boolean)[]) {
   //array타입 지정하듯이 rest도 []로 지정하면 된다.
   console.log(a);
 }
 
-func(1, 5, 3, 2, true, "m", 5);
+func1(1, 5, 3, 2, true, "m", 5);
 let arr = [1, 2, 3];
 let arr2 = [4, 5];
 let arr3 = [...arr, ...arr2];
