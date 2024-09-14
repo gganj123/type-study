@@ -18,3 +18,14 @@ function fung(x) {
     return x.length;
 }
 fung(["100"]);
+function lengthCount(x) {
+    console.log(x.length);
+}
+lengthCount("hello");
+lengthCount(["kim", "park", "ggg"]);
+var data = '{"name":"dog","age":1}';
+function jsonObject(x) {
+    return JSON.parse(x);
+}
+var result = jsonObject(data);
+console.log(result);

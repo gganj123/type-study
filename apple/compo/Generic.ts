@@ -28,3 +28,23 @@ function fung<Mytype extends LengthCheck>(x: Mytype) {
 
 fung<string[]>(["100"]);
 
+function lengthCount<MyType extends string | string[]>(x: MyType) {
+  console.log(x.length);
+}
+
+lengthCount<string>("hello");
+lengthCount<string[]>(["kim", "park", "ggg"]);
+
+interface Animal2 {
+  name: string;
+  age: number;
+}
+
+let data = '{"name":"dog","age":1}';
+
+function jsonObject<Type>(x: string): Type {
+  return JSON.parse(x);
+}
+
+let result = jsonObject<Animal2>(data);
+console.log(result);
