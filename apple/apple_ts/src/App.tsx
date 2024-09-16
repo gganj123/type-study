@@ -1,18 +1,16 @@
-import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Dispatch } from "redux";
-import { RootState } from "./index";
+import { RootState, increment } from "./index";
 
 function App() {
   const 꺼내온거 = useSelector((state: RootState) => state);
-  const dispatch: Dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   return (
     <div className="App">
-      {꺼내온거.count}
+      {꺼내온거.counter1.count}
       <button
         onClick={() => {
-          dispatch({ type: "증가" });
+          dispatch(increment());
         }}
       >
         버튼
