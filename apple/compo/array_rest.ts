@@ -24,3 +24,9 @@ let arr2: [number, number, ...number[]] = [4, 5, ...arr];
 type 음식 = [string, number, ...boolean[]];
 
 let arrr: 음식 = ["짜장면", 3500, true, true, true, false, true];
+
+type study3type = [string, boolean, ...(number[] | string[])];
+
+function study3func(x: study3type) {
+  console.log(x);
+}
