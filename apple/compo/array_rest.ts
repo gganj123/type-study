@@ -30,3 +30,17 @@ type study3type = [string, boolean, ...(number[] | string[])];
 function study3func(x: study3type) {
   console.log(x);
 }
+
+function study4func(...rest: (string | number)[]) {
+  let result: [string[], number[]] = [[], []];
+  rest.forEach((e) => {
+    if (typeof e === "string") {
+      result[0].push(e);
+    } else {
+      result[1].push(e);
+    }
+  });
+  return result;
+}
+
+study4func("b", 5, 6, 8, "a", 6);
