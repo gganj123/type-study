@@ -18,3 +18,9 @@ function 함슈2(a: number, b: string) {
 
 let arr = [1, 2, 3, 765, 4];
 let arr2: [number, number, ...number[]] = [4, 5, ...arr];
+
+//튜플과 스프레드 같이 쓰기
+
+type 음식 = [string, number, ...boolean[]];
+
+let arrr: 음식 = ["짜장면", 3500, true, true, true, false, true];
