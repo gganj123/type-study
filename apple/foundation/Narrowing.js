@@ -15,7 +15,7 @@ if (Day instanceof Date) {
     //이런식으로 부모로써 네로윙도 가능함
 }
 function funcWheel(x) {
-    if (x.wheel == "4개") {
+    if (x.wheels == "4개") {
         //x가 Car2타입인지 확인하는 네로윙
         console.log("x는 Car타입이에요");
     }
